@@ -24,7 +24,11 @@ type GenericArray<T> = Array<T>
     type GenericTuple <X,Y>=[X,Y]
      const men:GenericTuple<string,string>=["Mr x","Mrs Y"]  
    
-    const userWitId :GenericTuple<number,{name:string,email:string}>=[
+     type User = {
+        name:string,
+        email:string
+     }
+    const userWitId :GenericTuple<number,User>=[
         1231,{
             name:"asif",
             email:"asif@gmail.com"
