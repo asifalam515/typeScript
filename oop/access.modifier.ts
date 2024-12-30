@@ -3,17 +3,24 @@
     class BankAccount {
      readonly   id:number;
         name:string;
-      private  balance :number;
+      private _balance :number; //no one will get it
+    //   protected _balance:number // only child class (drive from parent )will get it 
         constructor(id:number,name:string,balane:number){
-            this.balance = balane;
+            this._balance = balane;
             this.name  =name
             this.id = id
         }
         addDeposit (amount:number){
-            this.balance +=amount
+            this._balance +=amount
         }
         getBalance(){
-            console.log(`My balance is ${this.balance}`)
+            console.log(`My balance is ${this._balance}`)
+        }
+    }
+
+    class StudentAccount extends BankAccount{
+        test(){
+            this.
         }
     }
 const poorAccout = new BankAccount(123,"asif",12)
