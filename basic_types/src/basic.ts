@@ -11,7 +11,7 @@
     d  = 124
     d = "str"
     d = true
-
+ const ages:number[] = [123,34,245,2]
 
     //Array 
     const friends :string[] = ["najmul",'asif','sakib']
